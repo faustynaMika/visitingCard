@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Montserrat:wght@300&display=swap');
+:root {
+    --animation-delay: 40s;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grape Nuts', cursive;
+}
+
+body {
+    background-image: url("/images/backgaund-2.jpg");
+    background-size: 100%;
+    background-attachment: scroll;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 60%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.35));
+    border-radius: 80px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    padding: 32px 92px;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    right: 80%;
+    height: 30vh;
+    animation: slideDown var(--animation-delay) linear infinite;
+}
+.logo_1{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    height: 30vh;
+    animation: slideDown 40s linear infinite;
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-30vh)}
+    to {transform: translateY(100vh)}
+}
+h1 {
+     color: #fff; 
+    /* font-family: Times, Times New Roman, serif;  */
+    font-size: 48px;
+    font-style: italic;
+    font-weight: normal; 
+    line-height: 40px; 
+    margin: 0 0 50px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34; 
+    padding-bottom: 12px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    text-align: center; 
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+ a {
+    text-decoration: none;
+    color: rgb(209, 155, 245);
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ a:after {
+     content: "";
+     width: 0;
+     height: 3px;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background: rgb(209, 155, 245);
+     background: linear-gradient(90deg, transparent, rgb(209, 155, 245));
+     transition: width 0.3s;
+ }
+ 
+ a:hover:after {
+    width: 100%;
+ }
+.img_me {
+    width: 200px;
+    height: 200px;
+    background: rgb(209, 155, 245);
+    border: solid 3px #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
